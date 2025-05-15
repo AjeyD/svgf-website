@@ -163,7 +163,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40 z-0" />
         <div className="flex-1 flex flex-col gap-6 items-center justify-center relative z-10 backdrop-blur-sm bg-white/60 rounded-2xl p-6 md:p-10 shadow-xl border border-green-200 w-full max-w-lg mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1D4727] mb-2 animate-slide-in-left text-center">Submit a Query</h2>
-          <p className="text-lg text-gray-700 mb-4 animate-fade-in text-center">Have a question or want to connect? Fill out the form below and we'll get back to you soon!</p>
+          <p className="text-lg text-gray-700 mb-4 animate-fade-in text-center">Have a question or want to connect? Fill out the form below and we&apos;ll get back to you soon!</p>
           <form ref={formRef} onSubmit={handleQuerySubmit} className="bg-card-gradient rounded-xl shadow p-6 flex flex-col gap-4 card-hover transition-all duration-300 w-full max-w-md animate-fade-in">
             <input name="fullName" type="text" placeholder="Full Name" required className="p-3 rounded border border-gray-300 focus:outline-[#1D4727]" />
             <input name="email" type="email" placeholder="Email Address" required className="p-3 rounded border border-gray-300 focus:outline-[#1D4727]" />
