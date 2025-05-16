@@ -59,7 +59,7 @@ export default function Home() {
           <svg className="absolute top-0 right-0 w-1/3 h-32 opacity-30" viewBox="0 0 400 100" fill="none"><ellipse cx="200" cy="50" rx="200" ry="50" fill="#b7e4c7" /></svg>
         </div>
         <div className="flex-1 flex flex-col gap-8 z-10 fade-in md:items-start items-center">
-          <Image src="/Logo.jpeg" alt="SVGF Logo" width={70} height={70} className="rounded-full shadow-lg border-4 border-[#1D4727] bg-white animate-fade-in" priority />
+          <Image src="/LOGO-01.svg" alt="SVGF Logo" width={70} height={70} className="rounded-full shadow-lg border-4 border-[#1D4727] bg-white animate-fade-in" priority />
           <h1 className="text-5xl md:text-6xl font-extrabold text-[#1D4727] drop-shadow-sm animate-slide-in-left">Waste to Worth: Powering Tomorrow</h1>
           <p className="text-xl text-gray-700 mt-4 animate-fade-in" style={{animationDelay: '0.3s'}}>Shri Vasudev Green Fuels LLP is committed to transforming agricultural waste into clean, sustainable energy. We deliver eco-friendly fuel solutions for a greener tomorrow.</p>
           <div className="flex gap-4 mt-6 animate-fade-in" style={{animationDelay: '0.5s'}}>

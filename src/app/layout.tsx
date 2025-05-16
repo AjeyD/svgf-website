@@ -28,7 +28,7 @@ export default function RootLayout({
       >
         <nav className="w-full flex items-center justify-between px-4 md:px-8 py-3 bg-white/70 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-gray-200">
           <a href="#home" className="flex items-center gap-3">
-            <Image src="/Logo.jpeg" alt="SVGF Logo" width={44} height={44} className="rounded-full border-2 border-[#1D4727] bg-white shadow-sm" />
+            <Image src="/LOGO-01.svg" alt="SVGF Logo" width={44} height={44} className="rounded-full border-2 border-[#1D4727] bg-white shadow-sm" />
             <span className="font-bold text-lg md:text-2xl text-[#1D4727] tracking-tight animate-fade-in whitespace-nowrap">Shri Vasudev Green Fuels LLP</span>
           </a>
           <button className="md:hidden flex flex-col justify-center items-center w-10 h-10" onClick={() => setNavOpen(!navOpen)} aria-label="Toggle navigation">
