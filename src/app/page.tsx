@@ -1,25 +1,14 @@
 'use client';
 import Image from "next/image";
 import Link from "next/link";
+import LiquidChrome from "./components/LiquidChrome";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-stretch w-full">
       {/* HERO SECTION */}
-      <section id="home" className="relative w-full flex flex-col md:flex-row items-center justify-between min-h-[90vh] bg-gradient-to-br from-[#1D4727] via-green-200 to-[#e5e5e5] px-6 md:px-24 py-20 overflow-hidden border-b-4 border-green-300 shadow-2xl pb-20 md:pb-20 pt-10 md:pt-20">
-        {/* Animated background shapes */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
-          <svg width="100%" height="100%" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute bottom-0 left-0 w-full h-40 opacity-60">
-            <defs>
-              <linearGradient id="heroGradient" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stopColor="#1D4727" stopOpacity="0.15" />
-                <stop offset="100%" stopColor="#e5e5e5" stopOpacity="0.12" />
-              </linearGradient>
-            </defs>
-            <path fill="url(#heroGradient)" d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,133.3C840,107,960,85,1080,101.3C1200,117,1320,171,1380,197.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-          </svg>
-          <svg className="absolute top-0 right-0 w-1/3 h-32 opacity-30" viewBox="0 0 400 100" fill="none"><ellipse cx="200" cy="50" rx="200" ry="50" fill="#b7e4c7" /></svg>
-        </div>
+      <section id="home" className="relative w-full flex flex-col md:flex-row items-center justify-between min-h-[90vh] bg-transparent px-6 md:px-24 py-20 overflow-hidden border-b-4 border-green-300 shadow-2xl pb-20 md:pb-20 pt-10 md:pt-20">
+        <LiquidChrome style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -5 }} />
         <div className="flex-1 flex flex-col gap-8 z-10 fade-in md:items-start items-center">
           <Image src="/LOGO-01.svg" alt="SVGF Logo" width={70} height={70} className="rounded-full shadow-lg border-4 border-[#1D4727] bg-white animate-fade-in" priority />
           <h1 className="text-5xl md:text-6xl font-extrabold text-[#1D4727] drop-shadow-sm animate-slide-in-left">Waste to Worth: Powering Tomorrow</h1>
@@ -38,14 +27,13 @@ export default function Home() {
       </section>
       <svg className="w-full" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#1D4727" fillOpacity="0.07" d="M0,64L60,58.7C120,53,240,43,360,42.7C480,43,600,53,720,69.3C840,85,960,107,1080,101.3C1200,96,1320,64,1380,48L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
 
-      {/* LEADERSHIP SECTION */}
-      <section id="leadership" className="w-full max-w-6xl mx-auto py-16 px-6 md:px-16 flex flex-col gap-12 fade-in bg-gradient-to-br from-green-50 via-white to-green-100 rounded-xl shadow-2xl mt-12 z-10 border-l-4 border-green-200 relative overflow-hidden">
+      {/* ABOUT US SECTION */}
+      <section className="w-full max-w-6xl mx-auto py-16 px-6 md:px-16 flex flex-col gap-12 fade-in bg-gradient-to-br from-green-50 via-white to-green-100 rounded-xl shadow-2xl mt-12 z-10 border-l-4 border-green-200 relative overflow-hidden">
         <div className="absolute -top-10 -left-10 w-60 h-60 bg-gradient-to-br from-green-200 via-green-100 to-white rounded-full opacity-30 blur-2xl z-0" />
         <div className="absolute bottom-0 right-0 w-40 h-40 bg-gradient-to-tr from-green-300 via-white to-green-100 rounded-full opacity-20 blur-2xl z-0" />
         <div className="flex flex-col gap-8 items-center z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1D4727] mb-2 animate-slide-in-left">Leadership Team</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1D4727] mb-2 animate-slide-in-left">About Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-            {/* Leader Cards with Enhanced Styling */}
             <div className="flex flex-col items-center bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-6 hover:transform hover:scale-105 hover:shadow-2xl transition-all duration-300 animate-fade-in border border-green-100">
               <div className="relative mb-4 group">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-green-600 to-emerald-500 rounded-full opacity-75 blur group-hover:opacity-100 transition duration-300"></div>
